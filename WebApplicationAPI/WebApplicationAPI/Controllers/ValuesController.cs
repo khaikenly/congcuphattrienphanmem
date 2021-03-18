@@ -18,7 +18,6 @@ namespace WebApplicationAPI.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-
             return "value";
         }
 
@@ -35,6 +34,16 @@ namespace WebApplicationAPI.Controllers
         // DELETE api/values/5
         public void Delete(int id)
         {
+        }
+
+        
+        public bool login(string username, string password)
+        {
+            if (username =="admin" && password=="admin")
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
